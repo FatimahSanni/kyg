@@ -15,13 +15,14 @@ class CreateOfficialsTable extends Migration
     {
         Schema::create('officials', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('first_name');
+            $table->string('last_name');
             $table->string('gender');
             $table->string('date_of_birth')->nullable();
             $table->string('picture');
             $table->text('bio')->nullable();
             $table->text('trivia')->nullable();
-            $table->integer('state_of_origin_id')->unsigned();
+            $table->integer('state_of_origin_id')->unsigned()->nullable();
             $table->integer('user_id')->unsigned();
             $table->integer('contact_id')->unsigned()->nullable();
             $table->timestamps();
