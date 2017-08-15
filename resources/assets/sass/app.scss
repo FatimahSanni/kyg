@@ -1,6 +1,92 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-// Variables
-@import "variables";
+@import url("https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600");
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$primary: #32DCCF;
+$black: #000;
+$white: #fff;
+$yellow: #FDD45B;
+$gray: rgba(209, 212, 213, 0.08);
+
+.navbar {
+  padding: 0rem 1rem;
+}
+
+.hero {
+  background-color: $primary;
+}
+
+.sidebar {
+  background-color: $white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.btn-primary, .btn-primary-alt:hover {
+  border-radius: 0;
+  background-color: $white;
+  border-color: $primary;
+  color: $primary;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 1, 0.3);
+}
+
+.nav-link {
+  color: $black;
+  font-weight: 200;
+}
+
+.btn-primary-alt, .btn-primary:hover {
+  color: $black;
+  background-color: $primary;
+  border-color: $primary;
+  border-radius: 0;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 2rem;
+  color: $white;
+}
+
+.container > h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.landing-card {
+  border: none;
+  border-radius: 0;
+  border-bottom: thick solid $primary;
+  background-color: $white;
+  //background-color: $gray;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+  .card-footer > p {
+    font-weight: 200;
+    font-size: 0.8rem;
+  }
+}
+
+.landing-card:hover {
+  border-bottom: thick solid $primary;
+  background-color: $white;
+}
+
+.new {
+  background-color: $gray;
+}
+
+.form {
+  border-bottom: thick solid $primary;
+  background-color: $white;
+  border-radius: 0;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
