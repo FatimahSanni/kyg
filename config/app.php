@@ -166,6 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Codecourse\Notify\NotifyServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
 
         /*

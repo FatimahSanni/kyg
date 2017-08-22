@@ -35,5 +35,8 @@
   },
   "homepage": "https://github.com/FatimahSanni/kyg#readme",
   "description": "",
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "sweetalert": "^1.1.3"
+  }
 }

@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::get('/officials/new', function () {
-    return view('officials._form');
-});
+Route::get('/officials/new', 'OfficialController@create');
+Route::post('/officials', 'OfficialController@store');
+Route::get('/officials', 'OfficialController@index');
+
+Route::get('/officials/{official}', 'OfficialController@show');
+
+Auth::routes();

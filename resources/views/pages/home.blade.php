@@ -10,7 +10,7 @@
     </div>
     <div class="container text-center">
         <h5>INTERESTING COLLECTIONS</h5>
-        <p style="font-weight: 100; font-size:0.9rem" class="mb-5">Curated collections from citizens like you.</p>
+        <p style="font-weight: 100; font-size:0.9rem" class="mb-5">Curated collections by active citizens like you.</p>
         <div class="row mb-5">
             <div class="col-md-3">
                 <div class="card text-white">
@@ -52,14 +52,14 @@
         </div>
         <a href="#" class="btn btn-primary mb-5" style="font-weight: 100">VIEW ALL COLLECTIONS</a>
         <ul class="nav nav-pills nav-fill mx-auto w-50 mb-5" id="pills-tab" role="tablist">
-            <li class="nav-item active">
-                <a class="nav-link" data-toggle="pill" href="#institution" aria-controls="institution">INSTITUTIONS</a>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#institution" aria-controls="institution">INSTITUTIONS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="pill" href="#official" aria-controls="official">OFFICIALS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="pill" href="#party" aria-controls="party">PARTY</a>
+                <a class="nav-link" data-toggle="pill" href="#party" aria-controls="party">PARTIES</a>
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
@@ -69,7 +69,7 @@
                         <div class="col-sm-4 col-md-3">
                             <a href="#" class="card-link" target="_blank">
                                 <div class="card mb-5 landing-card" style="max-width: 20rem;">
-                                    <div class="card-body text-success">
+                                    <div class="card-body text-gray">
                                         <img src="http://lorempixel.com/output/people-q-c-250-250-7.jpg" alt=""
                                              class="img-fluid rounded-circle mb-3" width="100" height="100">
                                         <h5 class="card-title text-dark">HOUSE OF REPS</h5>

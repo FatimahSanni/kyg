@@ -14,7 +14,11 @@
                 <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Be a Contributor</a>
+                @if(Auth::check())
+                    <a href="#" class="nav-link">{{Auth::user()->name}}</a>
+                @else
+                    <a class="nav-link" href="#">Be a Contributor</a>
+                @endif
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
