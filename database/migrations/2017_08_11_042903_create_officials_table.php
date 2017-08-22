@@ -19,7 +19,7 @@ class CreateOfficialsTable extends Migration
             $table->string('last_name');
             $table->string('gender');
             $table->string('date_of_birth')->nullable();
-            $table->string('picture');
+            $table->string('picture')->nullable();
             $table->text('bio')->nullable();
             $table->text('trivia')->nullable();
             $table->integer('state_of_origin_id')->unsigned()->nullable();

@@ -14,7 +14,7 @@ class OfficialController extends Controller
      */
     public function index()
     {
-        //
+        return view('/');
     }
 
     /**
@@ -24,7 +24,7 @@ class OfficialController extends Controller
      */
     public function create()
     {
-        //
+        return view('officials.new');
     }
 
     /**
@@ -35,7 +35,20 @@ class OfficialController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $official = new Official();
+        $official->create($request->all());
+        if ($official->save()) {
+            dd('Saved!');
+//            notify()->flash('<i class="fa fa-thumbs-up"></i>', 'success', [
+//                'text' => 'Official added successfully'
+//            ]);
+//            return redirect('/officials/'.$official->id);
+        } else {
+            notify()->flash('<i class="fa fa-frown-o"></i>', 'error', [
+                'text' => 'Something went wrong! Official could not be added. Please try again'
+            ]);
+            return back()->withInput();
+        }
     }
 
     /**
@@ -46,7 +59,8 @@ class OfficialController extends Controller
      */
     public function show(Official $official)
     {
-        //
+        $name = $official->name;
+        return view('officials.show', compact('name'));
     }
 
     /**

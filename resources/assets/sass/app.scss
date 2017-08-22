@@ -8,6 +8,7 @@ $black: #000;
 $white: #fff;
 $yellow: #FDD45B;
 $gray: rgba(209, 212, 213, 0.08);
+$dark-gray: rgba(209, 212, 213, 0.2);
 
 .navbar {
   padding: 0rem 1rem;
@@ -15,6 +16,10 @@ $gray: rgba(209, 212, 213, 0.08);
 
 .hero {
   background-color: $primary;
+}
+
+.show-hero {
+  margin-bottom: 0;
 }
 
 .sidebar {
@@ -60,9 +65,9 @@ $gray: rgba(209, 212, 213, 0.08);
 .landing-card {
   border: none;
   border-radius: 0;
-  border-bottom: thick solid $primary;
-  background-color: $white;
-  //background-color: $gray;
+  //border-bottom: thick solid $primary;
+  //background-color: $white;
+  background-color: $gray;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
   .card-footer > p {
     font-weight: 200;
@@ -76,7 +81,7 @@ $gray: rgba(209, 212, 213, 0.08);
 }
 
 .new {
-  background-color: $gray;
+  background-color: $dark-gray;
 }
 
 .form {
@@ -89,4 +94,16 @@ $gray: rgba(209, 212, 213, 0.08);
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0;
+}
+
+.nav-pills .nav-link.active, .show > .nav-pills .nav-link {
+  background-color: $primary;
+}
+
+.nav-pills .nav-link {
+  border-radius: 5rem;
+}
+
+.text-gray {
+  color: #434443;
 }
